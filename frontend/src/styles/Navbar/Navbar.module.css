@@ -1,0 +1,337 @@
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: -1opx;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 5px 0;  /* Add vertical padding */
+  
+}
+
+/* Theme variations */
+.light {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+}
+
+.dark {
+ background-color: var(--navbar-color);
+  color: var(--text-color);
+}
+
+.blue {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+.header {
+  display: flex;
+  color: #0056b3;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative; /* Ensure dropdown is positioned relative to header */
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto; /* Remove fixed width */
+}
+
+.brandName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-right: 20px;
+}
+
+.searchSection {
+  display: flex;
+  align-items: center;
+    flex: 1; /* Allow the search to take the remaining space */
+    margin-left: 20px; /* Space between logo and search */
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.searchInput {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc; /* Add a light border */
+  margin-left: 0; /* Remove left margin */
+    width: 100%; /* Ensure it fills the container */
+    box-sizing: border-box; /* Include padding and border in the total width */
+
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  margin-right: 0; /* Remove right margin */
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.buyButton {
+  background: #FFD700; /* Bright yellow */
+  color: #ffffff; /* Black text for better contrast on yellow */
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.buyButton:hover {
+  background-color: #FFB700; /* Darker yellow on hover */
+}
+
+.inviteButton {
+  background: lightseagreen;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Reduce font size */
+}
+
+.inviteButton:hover {
+  background-color: #0056b3;
+}
+
+.buttonIcon {
+  width: 18px; /* Reduce icon size */
+  height: 18px; /* Reduce icon size */
+  margin-right: 5px;
+}
+
+.notificationIcon {
+  width: 24px;
+  height: 24px;
+    margin-right: 10px; /* Add a right margin */
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 30px; /* Reduce image size */
+  height: 30px; /* Reduce image size */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: bold;
+  color: #000;
+  font-size: 14px; /* Reduce font size */
+}
+
+.userRole {
+  color: #555;
+   font-size: 12px; /* Reduce font size */
+}
+
+.dropdownIcon {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.menuContainer {
+  display: flex;
+  max-width: 147px;
+  padding-top: 8px;
+  flex-direction: column;
+  position: absolute;
+  top: 50px; /* Position below the navbar */
+  right: 0;
+  z-index: 10;
+}
+
+.menuWrapper {
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 4px 1px;
+}
+  .menuContent {
+    z-index: 0;
+    display: flex;
+    width: 100%;
+    max-width: 145px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+.menuIndicator {
+  aspect-ratio: 2;
+  object-fit: contain;
+  object-position: center;
+  width: 18px;
+  border-radius: 0px;
+  position: absolute;
+  z-index: 0;
+  right: 8px;
+  top: -8px;
+  height: 9px;
+}
+
+.themeContainer {
+  border-top: 1px solid var(--bluegray-50, #e5e5ea);
+  border-bottom: 1px solid var(--bluegray-50, #e5e5ea);
+  
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 7px 8px;
+}
+
+.themeOptions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.themeCircle {
+  stroke-width: 1px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  background-color: linear-gradient(180deg, #ccb6f6 0%, #c2b6ee 39%, #c8d9f9 67.5%, #f4f3d5 100%);
+  border-radius: 50%;
+  align-self: stretch;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  stroke: var(--Primary, #2915f9);
+  margin: auto 0;
+  border: 1px solid rgba(41, 21, 249, 1);
+}
+
+.themeCircleWhite {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  align-self: stretch;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+}
+
+.themeCirclePlain {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  align-self: stretch;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+}
+.activeTheme{
+  border: 1px solid #2915f9;
+}
+
+.menuItem {
+  align-items: center;
+  background: var(--Gray-00, #fff);
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 1);
+  white-space: nowrap;
+  justify-content: flex-start;
+  padding: 6px 0 6px 8px;
+  font: 500 14px/1 Poppins, sans-serif;
+  cursor: pointer;
+}
+
+.menuIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.menuText {
+  align-self: stretch;
+  width: 148px;
+  gap: 8px;
+  margin: auto 0;
+}
+/* Update any instances of 'start' alignment to 'flex-start' */
+.navbar {
+  align-items: flex-start;
+  /* other properties */
+}
+.hidden{
+  display: none;
+}

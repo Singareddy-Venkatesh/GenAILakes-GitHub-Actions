@@ -1,0 +1,85 @@
+/* Container Styling */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 1200%;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding: 9px;
+  background: linear-gradient(to right, #eef2f6, #dff3f3);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+  margin-left: -24rem;
+  overflow-x: auto;
+}
+
+/* Connector Container Styling */
+.connectorContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between dotted line, chevron, and step */
+}
+
+/* Each Step Wrapper */
+.step {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-right: 20px; /* Space between steps */
+}
+
+/* Icon Wrapper Styling */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-right: -1px;
+}
+
+/* Check Icon Styling */
+.checkIcon {
+  font-size: 21px;
+}
+
+/* Label Styling */
+.label {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 4px;
+  margin-right: -12px;
+  transition: color 0.3s ease;
+}
+
+.activeLabel {
+  color: #000000;
+  font-weight: bold;
+}
+
+.inactiveLabel {
+  color: #000000;
+}
+
+/* Dotted Line Styling */
+.dottedLine {
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* Chevron Styling */
+.chevron {
+  color: #000000;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* Optional: For each step circle completed styling */
+.step.completed .checkIcon {
+  color: green;
+}

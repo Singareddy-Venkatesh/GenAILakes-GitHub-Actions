@@ -1,0 +1,69 @@
+/* Sidebar.module.css */
+
+.sidebarContainer {
+  width: 160px;
+  transition: width 0.3s;
+  /* background-color: #5e8bb8; */ /* Sidebar background removed */
+  color: black;
+}
+
+.collapsed {
+  width: 50px; /* Collapsed sidebar width */
+}
+
+.navItem {
+  padding: 10px;
+}
+
+.navItemContent {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navItemIcon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.navItemLabel {
+  font-size: 16px;
+}
+
+.navItemLabelCollapsed {
+  display: none; /* Hide label when sidebar is collapsed */
+}
+
+  .hamburgerIcon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    margin-left: auto; /* Pushes the icon to the right */
+  }
+
+.dropdownMenu {
+  padding-left: 20px;
+}
+
+.dropdownItem {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.navItemIcon {
+  color: #05294f; /* Blue color */
+  opacity: 0.9; /* Slight transparency */
+  font-size: 1.2rem;
+}
+
+.hamburgerButton {
+  color: #05294f; /* Blue color */
+  opacity: 0.9; /* Slight transparency */
+  margin: 5px 0px 0px 13px;
+}
+
+.dropdownIcon {
+  color: #05294f; /* Blue color */
+  opacity: 0.9; /* Slight transparency */
+}

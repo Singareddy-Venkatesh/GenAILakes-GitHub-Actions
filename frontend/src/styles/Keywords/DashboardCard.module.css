@@ -1,0 +1,163 @@
+/* Container Styles */
+.container {
+  background: #CAD8FB;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  height: 350px;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+
+}
+  .cardNavbar {
+    display: flex;
+    height: 10px;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #F8E1C1;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 8px 8px 0 0;
+    justify-content: space-between;
+  }
+
+  .closeButton {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1.5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:  black;
+    font-size: 5px solid black;
+    margin-left: auto;
+    transition: background-color 0.2s ease;
+  }
+
+  .closeButton:hover {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+.icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.navTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+/* Left Section: Pie Chart */
+.pieChartSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-top: 10px;
+}
+
+.chartContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 40px;
+}
+
+.pieChart {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #FF6B6B 6%,    /* Content - Red */
+    #FFB067 24%,   /* Draft - Orange */
+    #9775FA 55%,   /* Outline - Purple */
+    #4169E1 100%   /* Ideas - Blue */
+  );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.labels p {
+  margin: 5px 0;
+}
+.contentText { color: #FF6B6B; font-weight: bold; }
+.draftText { color: #FFB067; font-weight: bold; }
+.outlineText { color: #9775FA; font-weight: bold; }
+.ideasText { color: #4169E1; font-weight: bold; }
+
+/* Middle Section: Progress Bars */
+.progressSection {
+  width: 40%;
+ 
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bar {
+  flex-grow: 1;
+  height: 20px;
+  background: #F3F4F6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.keywords, .hashtags, .taglines {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+  
+}
+
+.keywords { background: #7F73FB; }
+.hashtags { background: #A9A1FD; }
+.taglines { background: #BFB9FD; }
+
+/* Right Section: Total Score */
+.totalScore {
+  text-align: center;
+  width: 20%;
+}
+
+.totalScore h1 {
+  color: #3A29FA;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.totalScore p {
+  color: #333;
+  font-weight: bold;
+}
+
+.barLabel {
+  min-width: 30px;
+  font-weight: 500;
+  color: black;
+  margin-left: 40px;
+  
+}

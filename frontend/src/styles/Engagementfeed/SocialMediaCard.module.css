@@ -1,0 +1,141 @@
+.card {
+  background:lightgray;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  min-width: 220px;
+  height: 500px;
+  max-width: 100%;
+
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  color: rgb(239, 245, 241);
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.linkedin {
+  background: #0077B5;
+}
+
+.facebook {
+  background: #1877F2;
+}
+
+.twitter {
+  background: #000000;
+}
+
+.xtwitter {
+  background: #000000;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+.youtube {
+  background: #FF0000;
+}
+
+.platformIcon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.addButton {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: blue;
+  font-size: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.cardContent {
+  padding: 10px;
+  font-size: 13px;
+  height: 445px;
+  margin: 4px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.profileImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.profileInfo {
+  flex: 1;
+}
+
+.profileName {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.profileMeta {
+  font-size: 14px;
+  color: #666;
+}
+
+.moreButton {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.postText {
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.engagementSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.reactions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.comments {
+  color: #666;
+  font-size: 14px;
+} 

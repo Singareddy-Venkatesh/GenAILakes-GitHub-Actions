@@ -1,0 +1,166 @@
+.userProfile {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.profileButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.profileButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.username {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #e5e5ea;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  z-index: 2;
+  min-width: 147px;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 0;
+}
+
+.dropdownLink {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px 8px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font: 500 14px/1 Poppins, sans-serif;
+}
+
+.dropdownLink:hover {
+  background-color: #f5f5f5;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.themesListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #e5e5ea;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.themesLink {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 8px;
+  color: black;
+  transition: background-color 0.2s;
+  font: 500 14px/1 Poppins, sans-serif;
+}
+
+.themeSelector {
+  display: flex;
+  margin-left: 2rem;
+  padding: 4px 0;
+  gap: 12px;
+}
+
+.themeButton {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 0;
+  border: 1px solid rgba(41, 21, 249, 1);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.lightButton {
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.darkButton {
+  background: linear-gradient(60deg, #2f3131, #bdb186, #d3a775f6);
+}
+
+.gradientButton {
+  background: linear-gradient(to right, #c9caf8, #c5e9db, #FFF8D8);
+}
+
+.light {
+  background: linear-gradient(135deg, #c8b5dc, #97a3ba, #869cc6, #bbdedb, #fcfcfc);
+  color: white; 
+}
+
+.dark {
+  background: linear-gradient(60deg, #2f3131, #bdb186, #d3a775f6);
+
+
+
+  color: rgb(206, 202, 202);
+}
+
+.gradient {
+  background-color: #FFFFFF;
+  background-color: #FFF;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 1);
+  background-color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 1);
+  color: #000000;
+}
+
+.activeTheme {
+  border: 2px solid #2915f9;
+}
+
+.themeButton:focus,
+.profileButton:focus {
+  outline: 2px solid #4a7aff;
+  outline-offset: 2px;
+}
+
+.cancelButton:hover,
+.saveButton:hover {
+  opacity: 0.9;
+}

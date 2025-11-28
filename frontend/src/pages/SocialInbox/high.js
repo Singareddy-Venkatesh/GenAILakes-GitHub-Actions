@@ -1,0 +1,80 @@
+"use client";
+
+import React, { useState } from "react";
+import Link from "next/link";
+import Navbar from "../../components/Layout/Navbar";
+import Sidebar from "../../components/Layout/Sidebar";
+import DashboardCard from "../../components/Dashboard/SocialMediaInbox/DashboardCard";
+
+const High = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true); // Sidebar starts open by default.
+
+  const handleSidebarToggle = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleReload = () => {
+    window.location.reload(); // This will reload the current page
+  };
+
+  return (
+    <div className="container">
+      {/* Navbar */}
+      <div className="navHeader">
+        <Navbar toggleSidebar={handleSidebarToggle} />
+      </div>
+
+      {/* Layout with Sidebar and CampaignPerformanceCard */}
+      <div className="main-layout">
+        <Sidebar
+          className="sidebarele"
+          isOpen={isSidebarOpen}
+          toggleSidebar={handleSidebarToggle}
+        />
+        {/* Main Content */}
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            padding: "1rem",
+            overflow: "hidden",
+          }}
+        >
+          {/* Breadcrumb Navigation */}
+          <div>
+            <Link href="/" style={{ textDecoration: 'none', color: 'gray' }}>Dashboard</Link>
+            <span className="mx-2">{" > "}</span>
+            <Link href="#" onClick={handleReload} style={{ textDecoration: 'none', color: 'blue' }}>High Priority Leads</Link>
+          </div>
+
+          {/* Combined Card */}
+          <div
+            style={{
+              background: "#fff",
+              borderRadius: "0.5rem",
+              boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+             
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column", // Stack elements vertically
+                gap: "1.5rem", // Space between the chart and social media cards
+              }}
+            >
+
+              {/* Social Media Cards with High Priority Filter */}
+              <div style={{ flex: 1 }}>
+                <DashboardCard priorityFilter="High" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default High;

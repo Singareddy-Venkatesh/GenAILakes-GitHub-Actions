@@ -1,0 +1,101 @@
+.dashboardContainer {
+  padding: 20px;
+  background-color: #e6f3ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background: BFCAFD;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 95%;
+
+  margin-top:-22px;
+  overflow: hidden;
+}
+
+.navbar {
+  background: linear-gradient(to right, #C3DAC4, #C3DAC4);
+  color: BFCAFD;
+  padding: 15px 25px;
+}
+
+.navTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.navIcon {
+  font-size: 1.8rem;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.closeIcon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.closeIcon:hover {
+  opacity: 0.8;
+
+}
+
+.chartsWrapper {
+  display: flex;
+  background: #D1DAFB;
+  padding: 25px;
+
+  height: 358px;
+  gap: 20px;
+}
+
+.barSection {
+
+
+  width: 100%;
+  padding: 20;
+}
+
+
+
+
+.donutSection {
+  width: 30%;
+}
+
+
+.chartWrapper {
+  background: #D1DAFB;
+  border-radius: 15px;
+  padding: 15px;
+  height: 300px;
+  position: relative;
+  max-width: 100%;
+}
+
+.navbar {    background: linear-gradient(to right, #C3DAC4, #C3DAC4);
+    color: BFCAFD;
+    padding: 15px 25px;
+  }
+
+
+  .chartWrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  

@@ -1,0 +1,59 @@
+/* Add your CSS styles here */
+.keywordsTrendsWrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mainLayout {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.contentArea {
+  flex: 1;
+  margin-top: -32px;
+  padding: 12px;
+  margin-left: -9px; /* Adjust based on your sidebar width */
+}
+
+.navHeader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.sectionTitle {
+  color: #3A29FA;
+  font-family: Inter, sans-serif;
+  margin-left: -73px;
+}
+
+.divider {
+  border-color: #8C82FF;
+  width: 100%;
+  border-top-width: 1px;
+  margin-bottom: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.breadcrumbs {
+  padding: 1rem;
+}
+
+.textSm {
+  font-size: 0.875rem;
+}
+
+.textGray600 {
+  color: #4B5563;
+}
+
+.p4 {
+  padding: 1rem;
+}

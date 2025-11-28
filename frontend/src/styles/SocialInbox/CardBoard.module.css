@@ -1,0 +1,75 @@
+.dashboard-container {
+  --platform-color: #0077B5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Rest of the CSS remains the same, just reference var(--platform-color) where needed */
+
+.content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #B6B1EB;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(var(--platform-color), 0.1);
+}
+
+.sidebar-item.active {
+  background-color: var(--platform-color);
+  color: white;
+}
+
+.platform-icon {
+  font-size: 24px;
+}
+
+.main-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.content-section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.comments {
+  height: 100vh;
+  overflow:hidden;
+}
+
+.alerts {
+  height: 100vh;
+  overflow:hidden;
+}

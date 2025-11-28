@@ -1,0 +1,248 @@
+
+.cardContainer {
+  width: 1199px;
+  max-width:80rem;
+  max-height: 45vh;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding:1.5rem;
+  margin-left: -30.05rem;
+  margin-top: 6rem;
+   
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+
+  margin-left: 1rem;
+  }
+
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.30rem;
+}
+
+.requiredMarker {
+  color: #e53e3e;
+}
+
+.contentselect {
+  width: 94%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  color: #4a5568;
+  background-color: #f9f9f9;
+}
+.contentselect:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.input, .select {
+  width: 90%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  color: #4a5568;
+  background-color: #f9f9f9;
+}
+
+.input::placeholder, .select::placeholder {
+  color: #e2e8f0;
+}
+
+.input:focus, .select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.contentSection {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+  
+}
+
+.textAreaContainer, .postToContainer {
+  flex: 1;
+}
+
+.textarea {
+  width: 90%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  min-height: 12vh;
+  color: #4a5568;
+}
+
+.textarea::placeholder {
+  color: #a0aec0;
+}
+
+.textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.socialMediaTags {
+  width: 90%;
+  min-height:12vh ;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  gap: 0.5rem;
+}
+
+.socialTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.socialTag:nth-child(1) { background-color: #ebf8ff; color: #2b6cb0; }
+.socialTag:nth-child(2) { background-color: #ebf8ff; color: #2b6cb0; }
+.socialTag:nth-child(3) { background-color: #edf2f7; color: #2d3748; }
+.socialTag:nth-child(4) { background-color: #fed7e2; color: #97266d; }
+.socialTag:nth-child(5) { background-color: #fed7d7; color: #9b2c2c; }
+
+.socialIcon {
+  margin-right: 0.25rem;
+}
+
+.removeTagButton {
+  margin-left: 0.25rem;
+}
+
+.removeTagButton:hover {
+  color: #9b2c2c;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cancelButton {
+  color: #718096;
+  font-weight: 600;
+  padding: 0.2rem 1rem;
+}
+
+.cancelButton:hover {
+  color: #4a5568;
+}
+
+.nextButton {
+  padding: 0.5rem 1rem;
+  background-color: #3182ce;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+}
+
+.nextButton:hover {
+  background-color: #2c5282;
+}
+
+.nextButtonArrow {
+  margin-left: 0.5rem;
+}
+
+.transparentCard {
+  background-color: rgba(255, 255, 255, 0.1); /* Highly transparent white */
+  backdrop-filter: blur(10px); /* Adds a blur effect behind the card */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.transparentCard:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.progressBarContainer {
+  margin-left: -2rem;
+  padding: 0;
+  width: 101px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-left: 0.5rem;
+  height: 12px;
+}
+.socialMediaTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.socialTag {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  gap: 6px;
+}
+
+.socialTag .removeTagButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f09433, #e08969, #e67384, #cc2366, #da62b4);
+}
+
+.youtube {
+  background-color: #ff0000;
+}

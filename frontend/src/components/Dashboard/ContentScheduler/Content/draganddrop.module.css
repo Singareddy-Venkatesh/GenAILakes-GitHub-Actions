@@ -1,0 +1,72 @@
+.dragDropCard {
+  position: sticky;
+  top: 20px;
+  background: #dae1fd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensures it fits in the dragdropSection */
+  height: 100%; /* Added to fit the section */
+  align-self: flex-start;
+}
+
+.postsList {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.postCard {
+  margin: 8px 0;
+  cursor: grab;
+  transition: all 0.2s ease;
+  background: #ffffff;
+}
+
+.postCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.postCard:active {
+  cursor: grabbing;
+}
+
+.priority {
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.priority.high {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.priority.medium {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.priority.low {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.dragdropSection {
+  flex: 1;
+  max-width: 350px;
+}
+
+.calendarSection {
+  flex: 2;
+}
+
+.schedulerLayout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px; /* Removed conflicting max-width value */
+  margin: 0 auto;
+}

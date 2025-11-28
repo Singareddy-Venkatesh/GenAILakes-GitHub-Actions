@@ -1,0 +1,72 @@
+/* Header Styles */
+.header {
+  padding: 5px;
+  /* border: 2px solid #1c5baf; */
+}
+
+/* First Row */
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 99%;
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.primaryButton {
+  background-color: #6366f1;
+  color: #fff;
+  border: 0px solid white; 
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Second Row */
+.secondRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #aaafcc, #bfcbd5, #f5f5f5);
+  padding:8px 5px;
+  border-radius: 4px;
+  width: 98%;
+}
+
+/* Left-aligned buttons */
+.leftButtons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Right-aligned buttons */
+.rightButtons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Secondary Button Styles */
+.secondaryButton {
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.secondaryButton svg {
+  margin-right: 8px;
+}

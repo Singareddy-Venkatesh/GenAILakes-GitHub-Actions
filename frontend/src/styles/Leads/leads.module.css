@@ -1,0 +1,75 @@
+/* App Container */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Dashboard Layout */
+.dashboardLayout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+/* Main Content */
+.dashboardMain {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #f4f5f7;
+  transition: margin-left 0.3s;
+}
+
+.dashboardMain.sidebarOpen {
+  margin-left: 250px; /* Adjust based on sidebar width */
+}
+
+/* Content Wrapper */
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Dashboard Header */
+.dashboardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.dashboardTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.breadcrumbSeparator {
+  margin: 0 0.5rem;
+}
+
+.breadcrumbActive {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Customization Section */
+.customizationSection {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Media Section */
+.socialMediaSection {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,160 @@
+.wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #e0f7fa, #e3f2fd);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #f2f9f7;
+  border-bottom: 1px solid #a4dafa;
+  margin-bottom: 15px;
+}
+
+.bellIcon {
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.messagesList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.avatarLineContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.avatarWrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.userAvatar {
+  border: 2px solid #4caf50;
+}
+
+.aiAvatar {
+  border: 2px solid #6200ea;
+  margin-left: 45px;
+  
+}
+
+.connectionLines {
+  position: relative;
+  width: 30px;
+  height: 50px;
+}
+
+.verticalLine {
+  position: absolute;
+  left: 46%;
+  height: 80px;
+  width: 2px;
+  border-left: 3px solid #6ab6f5;
+}
+
+.curvedLine {
+  /* position: absolute;
+  width: 20px;
+  height: 25px;
+  border-left: 2px solid #636df1;
+  border-bottom: 2px solid #8351e0;
+  border-bottom-left-radius: 25px;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%); */
+  position: absolute;
+
+  left: -7px; 
+  width: 30px;
+  height: 28px;
+  bottom: -60px;
+  border-left: 3px solid #6ab6f5;
+  border-bottom: 3px solid #6ab6f5;
+  border-bottom-left-radius: 15px;
+  margin-left: 20px;
+}
+
+.messageGroup {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.aiMessage {
+  background: #e3f2fd;
+}
+
+.userMessage {
+  background: #ffffff;
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-weight: 600;
+  color: #333;
+}
+
+.flagIcon {
+  cursor: pointer;
+}
+
+.messageText {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}

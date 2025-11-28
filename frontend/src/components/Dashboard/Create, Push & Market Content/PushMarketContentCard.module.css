@@ -1,0 +1,97 @@
+.push-market-content-card {
+    width: 100%;
+    height: 100%;
+    box-shadow: #dee7e7 0px 0px 10px;
+  
+  }
+  
+  .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px;
+      border-radius: 8px 8px 0 0;
+      background: #C1F8CF;
+    
+   
+  }
+  
+  .card-header span {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .expend-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .expend-button button:hover {
+    color: #333;
+  }
+  
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+  }
+  
+  .flexCol {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .itemsCenter {
+      align-items: center;
+  }
+  
+  .relative {
+      position: relative;
+  }
+  
+  .absolute {
+      position: absolute;
+  }
+  
+  .textCenter {
+      text-align: center;
+  }
+  
+  .text5xl {
+      font-size: 3rem;
+  }
+  
+  .textLg {
+      font-size: 1.125rem;
+  }
+  
+  .textSm {
+      font-size: 0.875rem;
+  }
+  
+  .textBlue700 {
+      color: #1D4ED8;
+  }
+  
+  .textGray500 {
+      color: #6B7280;
+  }
+  
+  .fontBold {
+      font-weight: 700;
+  }
+  
+  .fontSemibold {
+      font-weight: 600;
+  }
+  
+  .mt2 {
+      margin-top: 0.5rem;
+  }
+  

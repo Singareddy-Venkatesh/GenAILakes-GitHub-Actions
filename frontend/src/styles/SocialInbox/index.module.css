@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navHeader {
+  width: 100%;
+  z-index: 100;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+.SocialInbox {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.textSm {
+  font-size: 1rem;
+}
+
+.textGray600 {
+  color: #4B5563;
+}
+
+.p4 {
+  padding: 1rem;
+}

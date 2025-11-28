@@ -1,0 +1,43 @@
+/* Theme Classes */
+.light-theme {
+  background: linear-gradient(135deg, #c8b5dc, #97a3ba, #869cc6, #bbdedb, #fcfcfc);
+  color: #000000;
+}
+
+.dark-theme {
+  background: linear-gradient(60deg, #2f3131, #bdb186, #d3a775f6);
+  color: rgb(206, 202, 202);
+}
+
+.gradient-theme {
+  background: linear-gradient(to right, #c9caf8, #c5e9db, #FFF8D8);
+  color: #000000;
+}
+
+/* Theme Button Styles */
+.theme-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 0;
+  border: 1px solid rgba(41, 21, 249, 1);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.theme-button.light {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.theme-button.dark {
+  background: linear-gradient(60deg, #2f3131, #bdb186, #d3a775f6);
+}
+
+.theme-button.gradient {
+  background: linear-gradient(to right, #c9caf8, #c5e9db, #FFF8D8);
+}
+
+.theme-button.active {
+  border: 2px solid #2915f9;
+} 

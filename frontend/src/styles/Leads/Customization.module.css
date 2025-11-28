@@ -1,0 +1,114 @@
+/* Customization.module.css */
+
+/* Container for the merged chart card */
+.mergedChartCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 0; /* No top margin */
+  padding-top: 0; /* No top padding */
+  display: flex; /* Use flexbox to arrange items side by side */
+  flex-direction: column; /* Arrange in column for the tab and line separator */
+}
+
+/* Tab header */
+.tabHeader {
+  display: flex;
+  justify-content: space-between; /* Distribute space between icon/title and close button */
+  align-items: center; /* Vertically align the items */
+  background-color: #D8EBFF; /* Light blue background */
+  padding: 0.5rem 1rem;
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  margin-bottom: -10px; /* Space below the tab */
+  width: 101%; /* Take full width of the container */
+  margin-left: -20px;
+}
+
+.tabTitle {
+  margin: 0;
+  font-size: 1.25rem; /* Adjust the font size if needed */
+  font-weight: bold; /* Optional for better styling */
+  flex-grow: 1; /* Allow the title to take up available space */
+  text-align: left; /* Ensure the title stays on the left */
+}
+.closeButton {
+  width: 36px; /* Diameter of the button */
+  height: 36px;
+  background-color: #f8e9ec; /* Light pink background */
+  border: 1px solid #000; /* Thin black border */
+  border-radius: 50%; /* Circular shape */
+  display: flex; /* Center the content */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #f4c5ca; /* Slightly darker pink on hover */
+  border-color: #555; /* Darker border on hover */
+}
+
+.closeIcon {
+  position: relative;
+  width: 16px; /* Width of the "X" */
+  height: 16px; /* Height of the "X" */
+}
+
+.closeIcon span {
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Thickness of the lines */
+  background-color: #000; /* Black color for the lines */
+  top: 50%;
+  left: 0;
+  transform-origin: center;
+}
+
+.closeIcon span:first-child {
+  transform: translateY(-50%) rotate(45deg); /* Rotate the first line */
+}
+
+.closeIcon span:last-child {
+  transform: translateY(-50%) rotate(-45deg); /* Rotate the second line */
+}
+
+
+
+
+/* Separator line below the tab */
+.separatorLine {
+  margin: 10px 0;
+  border-top: 1px solid #ccc; /* Horizontal separator */
+  width: 103.5%; /* Full width */
+  margin-left: -20px;
+}
+
+/* Container to hold charts side by side */
+.chartContainer {
+  display: flex; /* Flexbox to arrange charts side by side */
+  gap: 20px; /* Add space between the two charts */
+  flex: 1; /* Make sure both sections take equal width */
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Left section for Line Chart */
+.lineChartSection {
+  flex: 1; /* Take equal width */
+  padding: 0 10px;
+}
+
+/* Right section for Pie Chart */
+.pieChartSection {
+  flex: 1; /* Take equal width */
+  padding: 0 10px;
+}
+
+/* Chart Title */
+.chartTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}

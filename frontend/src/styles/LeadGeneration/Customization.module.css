@@ -1,0 +1,240 @@
+/* Container for the merged chart card */
+.mergedChartCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tab header */
+.tabHeader {
+  display: flex;
+  justify-content: space-between; /* Distribute space between icon/title and close button */
+  align-items: center; /* Vertically align the items */
+  background-color: #D8EBFF; /* Light blue background */
+  padding: 0.5rem 1rem;
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  margin-bottom: -10px; /* Space below the tab */
+  width: 101%; /* Take full width of the container */
+  margin-left: -20px;
+}
+
+.tabTitle {
+  margin: 0;
+  font-size: 1.25rem; /* Adjust the font size if needed */
+  font-weight: bold; /* Optional for better styling */
+  flex-grow: 1; /* Allow the title to take up available space */
+  text-align: left; /* Ensure the title stays on the left */
+}
+
+.closeButton {
+  width: 36px; /* Diameter of the button */
+  height: 36px;
+  background-color: #f8e9ec; /* Light pink background */
+  border: 1px solid #000; /* Thin black border */
+  border-radius: 50%; /* Circular shape */
+  display: flex; /* Center the content */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #f4c5ca; /* Slightly darker pink on hover */
+  border-color: #555; /* Darker border on hover */
+}
+
+.closeIcon {
+  position: relative;
+  width: 16px; /* Width of the "X" */
+  height: 16px; /* Height of the "X" */
+}
+
+.closeIcon span {
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Thickness of the lines */
+  background-color: #000; /* Black color for the lines */
+  top: 50%;
+  left: 0;
+  transform-origin: center;
+}
+
+.closeIcon span:first-child {
+  transform: translateY(-50%) rotate(45deg); /* Rotate the first line */
+}
+
+.closeIcon span:last-child {
+  transform: translateY(-50%) rotate(-45deg); /* Rotate the second line */
+}
+
+/* Separator line below the tab */
+.separatorLine {
+  margin: 10px 0;
+  border-top: 1px solid #ccc;
+  width: 103.5%;
+  margin-left: -20px;
+}
+
+/* Container to hold chart cards */
+.chartContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual chart card */
+.chartCard {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 70%;
+}
+.chartCards {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 70%;
+}
+
+/* Chart Title */
+.chartTitle {
+  font-size: 2rem;
+  font-weight: 500;
+ 
+  margin-top: 100px;
+  color: #333;
+}
+
+.chartTitles {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -350px;
+  color: #080808;
+  margin-left: 600px;
+}
+
+/* Total Leads Section */
+.totalLeadsContainer {
+  text-align: right;
+}
+
+.totalLeadsValue {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #6366f1;
+  margin-bottom:200px;
+  margin-top: -100px;
+  margin-right: 800px;
+}
+
+.platformStats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 40%;
+  margin-top: -200px;
+}
+
+/* Updated Platform Card with Top Bar */
+.platformCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* To position the top bar */
+  margin-bottom: 10px;
+  max-width: 10000px;
+}
+
+/* Top Bar for Platform Card */
+.platformBar {
+  width: 20%;
+ 
+  height: 6px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 10px;
+margin-left: -20px;
+}
+
+/* Specific Platform Bar Colors */
+.platformBar.linkedin {
+  background-color: #0077b5; /* LinkedIn blue */
+}
+
+.platformBar.facebook {
+  background-color: #4267b2; /* Facebook blue */
+}
+
+.platformBar.instagram {
+  background-color: #e1306c; /* Instagram pink */
+}
+
+.platformBar.twitter {
+  background-color: #1da1f2; /* Twitter blue */
+}
+
+/* Platform Name and Value */
+.platformName {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.platformValue {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Social Media Bar (if needed elsewhere) */
+.socialMediaBar {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.socialMediaBar span {
+  flex: 1;
+  height: 3px;
+  background: #0077B7;
+  border-radius: 2px;
+}
+
+.instagrambar {
+  background: #e1306c !important;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.facebook {
+  background: #4267b2;
+}
+
+.instagram {
+  background: #e1306c;
+}
+
+.twitter {
+  background: #1da1f2;
+}

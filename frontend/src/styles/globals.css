@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import './themes.css';
+
+/* Global Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  
+ /* background: linear-gradient(to right, #E5DBFB, #ABC3FB, #E2EFDD);*/
+ 
+  height: 100vh;
+}
+
+/* Theme Variables */
+:root {
+  --text-color: #000;
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+}
+
+/* Layout Components */
+.indexcontainer {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--text-color);
+  
+}
+
+.navHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(to right, #F5F3FC, #FDFBED);
+  box-shadow: 0 2px 4px var(--box-shadow-color);
+}
+
+.sidebarele {
+  
+  height: calc(100vh - 60px);
+  display: sticky !important;
+  position: sticky !important;
+  left: 0;
+  padding-top: 200px;
+  width: 30%;
+  height: 100%;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.main-layout {
+  display: flex;
+  padding-top: 60px;
+  position: relative;
+  width: 100vw;
+}
+
+/* Sidebar States */
+.sidebarele.open {
+  transform: translateX(0);
+}
+
+.sidebarele.closed {
+  transform: translateX(-100%);
+}
+.sideline{
+  
+  height: 1000px;
+  color: #e0f7fa;
+}
+
+/* Dashboard Layout */
+.dashboardgrid {
+  flex: auto;
+  padding: 2px;
+  transition: margin-left 0.3s ease;
+  width: 70%;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.433) !important;;
+}
+
+.dashboardgrid.sidebar-open {
+  margin-left: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebarele {
+    transform: translateX(-100%);
+  }
+
+  .sidebarele.open {
+    transform: translateX(0);
+  }
+
+  .dashboardgrid {
+    margin-left: 2px;
+    width: 70%;
+  }
+
+  .dashboardgrid.sidebar-open {
+    margin-left: 0px;
+  }
+}
+/* Login Styles */
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #e0f2f7, #e0f7fa);
+  padding:var(--spacing-medium);
+  font-family: 'Arial', sans-serif;
+}

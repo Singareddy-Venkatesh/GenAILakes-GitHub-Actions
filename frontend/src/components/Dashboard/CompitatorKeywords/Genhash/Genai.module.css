@@ -1,0 +1,157 @@
+/* social media cards content */
+.websiteCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  /* margin-bottom: 10px; */
+  background-color: white;
+  min-height: 150px;
+padding-right: -20px; 
+ /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); */
+}
+/* social media carda topbar */
+.cardTopbar {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  background-color: #EAE8FE;
+  padding: 10px 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* icon code */
+.platformIcon {
+  margin-right: 8px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+/* icon title code */
+.platformTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+/* .tagContainer {
+
+  flex: 1;
+  padding: 15px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+.tag {
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  word-wrap: break-word;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  height: auto;
+}
+
+      .emptyBar {
+        background-color: #97A6C6;
+        padding: 10px;
+        border-radius: 28px;
+        margin: 10px 20px;
+        width: 320px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navigationButtons {
+        display: flex;
+        gap: 20px;
+      }
+
+      .navButton {
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        font-size: 15px;
+        height: 40px;
+  
+        cursor: pointer;
+        background: #97A6C6;
+        transition: all 0.3s ease;
+      }
+
+      /* .navButton:hover {
+        background: #e4e6e9;
+      } */
+
+      .navButton.active {
+        background: #0066cc;
+        color: white;
+      }
+  
+  .cardsContainer {
+    padding: 20px;
+    overflow: hidden;
+    
+  }
+  .aiCard {
+    background: linear-gradient(to right, #C2D1FE, #CFE4F4,#DAEDEE);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* min-width: 320px; */
+    width: 60%;
+    margin: 10px;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ 
+  /* .navButton {
+    flex: 1;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+   */
+  .navbar {
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .navbar h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .iconWrapper {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 18px;
+  }
+  
+ 
+  
+  .timestamp {
+    font-size: 1rem;
+    color: black;
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+  }

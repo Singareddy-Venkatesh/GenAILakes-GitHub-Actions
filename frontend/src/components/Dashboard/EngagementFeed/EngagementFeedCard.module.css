@@ -1,0 +1,92 @@
+.card {
+  /* background: linear-gradient(180deg, #f5f7ff 0%, #edeffd 100%); */
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+  background: #C1C6F8;
+  
+} 
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressContainer {
+  margin-top: 10px;
+  width: 180px;
+  height: 200px;
+
+}
+
+.centerText {
+  text-align: center;
+  color: #333;
+}
+
+.total {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.totalLabel {
+  font-size: 12px;
+}
+
+/* .legend {
+  width: %;
+} */
+
+.legendItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  min-inline-size: 120px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.answered {
+  background-color: #6dd400;
+}
+
+.unanswered {
+  background-color: #5f78ff;
+}
+
+.legendCount {
+  color: #333;
+  font-weight: 600;
+}

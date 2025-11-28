@@ -1,0 +1,305 @@
+/* content.module.css */
+
+.flex {
+  display: flex;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.itemsCenter {
+  align-items: center;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.roundedLg {
+  border-radius: 0.5rem;
+}
+
+.roundedFull {
+  border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.shadowLg {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.bgGreen100 {
+  background-color:transparent;
+}
+
+.bgBlue600 {
+  background-color: #1d4ed8;
+}
+
+.bgBlue700 {
+  background-color: #1e3a8a;
+}
+
+.bgBlue100 {
+  background-color: #bfdbfe;
+}
+
+.bgOrange100 {
+  background-color: #ffe5b4;
+}
+
+.bgGray200 {
+  background-color: #e5e7eb;
+}
+
+.bgGradient {
+  background: #fffefb;
+}
+
+.textGray500 {
+  color: #6b7280;
+}
+
+.textGray600 {
+  color: #4b5563;
+}
+
+.textBlue700 {
+  color: #1e40af;
+}
+
+.textWhite {
+  color: #ffffff;
+}
+
+.fontBold {
+  font-weight: 700;
+}
+
+.fontSemibold {
+  font-weight: 600;
+}
+
+.textLg {
+  font-size: 1.125rem;
+}
+
+.text5xl {
+  font-size: 3rem;
+}
+
+.mt2 {
+  margin-top: 0.5rem;
+}
+
+.mt4 {
+  margin-top: 1rem;
+}
+
+.mt6 {
+  margin-top: 1.5rem;
+}
+
+.p4 {
+  padding: 1rem;
+}
+
+.p6 {
+  padding: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.wFull {
+  width: 100%;
+}
+
+.bgWhite {
+  background-color: #ffffff;
+}
+
+.maxWscreenLg {
+  max-width: 1024px; /* Adjust to desired width */
+}
+
+.bgpurple{
+
+  background:linear-gradient(to right, #E3E4FF, #CDEAE6, #FFF8D8);
+}
+
+.line {
+  height: 2px;
+  background-color: #4A90E2;
+  width: 10%;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.postsWrapper {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.postItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.postTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.textBlue {
+  color: #1d4ed8;
+}
+
+.postDescription {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.postSchedule {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.status {
+  padding: 4px 16px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.statusPublished {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.statusScheduled {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.statusDraft {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.editButton {
+  color: #3b82f6;
+  background-color: #bfdbfe;
+  padding: 4px 16px;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hoverButton:hover {
+  background-color: #93c5fd;
+}
+
+.createButton {
+  background-color: #2563eb; /* Tailwind's bg-blue-600 */
+  color: #ffffff; /* Text color white */
+  padding: 8px 20px; /* Adjust padding as necessary */
+  border-radius: 8px; /* Rounded corners, similar to rounded-lg */
+  font-weight: 600; /* Semibold text */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.createButton:hover {
+  background-color: #1d4ed8; /* Tailwind's hover:bg-blue-700 */
+}
+
+.transparentContainer {
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+}
+
+.transparentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Transparent background */
+  border-radius: 9999px; /* Circular button */
+  width: 22px; /* Button size */
+  height: 22px;
+  font-size: 16px; /* Font size for 'X' */
+  font-weight: bold; /* Bold 'X' */
+  color: #374151; /* Dark gray text */
+  border: 1px solid black; /* Black circular border */
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.transparentButton:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Light black overlay on hover */
+  color: #1f2937; /* Slightly darker gray text */
+  border-color: black; /* Ensure the border remains black on hover */
+}
+.tabHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #acfbb7; /* Light blue background */
+  padding:0.5rem 1rem;
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  margin-bottom: -19px; /* Space below the tab */
+  width: 97%; /* Take full width */
+  margin-left: 1px;
+}
+.tabTitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
+
+}
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.mainContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Optionally add padding for the container */
+  height: 80%; /* Ensure the container spans the full height */
+  width: 40%; /* Ensure the container spans the full width */
+  background-color: transparent; /* Set background to transparent */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light border with transparency */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  
+}
