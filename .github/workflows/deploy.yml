@@ -1,0 +1,82 @@
+name: CI-CD with Security Scans
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-test-scan-deploy:
+    runs-on: self-hosted
+
+    steps:
+    # ------------------------------
+    # 1. CHECKOUT CODE
+    # ------------------------------
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # ------------------------------
+    # 2. GITLEAKS — Secret Scanning
+    # ------------------------------
+    - name: Scan secrets with Gitleaks
+      uses: zricethezav/gitleaks-action@v2
+      with:
+        args: detect --source . --no-git -v
+
+    # ------------------------------
+    # 3. TRIVY — Vulnerability Scanning
+    # ------------------------------
+    - name: Install Trivy
+      run: |
+        sudo apt-get update -y
+        sudo apt-get install wget apt-transport-https gnupg lsb-release -y
+        wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+        echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list
+        sudo apt-get update -y
+        sudo apt-get install trivy -y
+
+    - name: Trivy file system vulnerability scan
+      run: trivy fs --exit-code 0 --severity HIGH,CRITICAL .
+
+    # ------------------------------
+    # 4. SONARQUBE ANALYSIS
+    # ------------------------------
+    - name: Install Java (SonarQube requires it)
+      run: sudo apt-get install default-jdk -y
+
+    - name: SonarQube Scan
+      env:
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: |
+        mkdir -p sonar
+        curl -sSLo sonar/sonar-scanner.zip \
+          https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip
+        unzip sonar/sonar-scanner.zip -d sonar/
+        export PATH="$PATH:$(pwd)/sonar/sonar-scanner-5.0.1.3006-linux/bin"
+        sonar-scanner \
+          -Dsonar.projectKey=fastleads99 \
+          -Dsonar.sources=. \
+          -Dsonar.host.url=$SONAR_HOST_URL \
+          -Dsonar.login=$SONAR_TOKEN
+
+    # ------------------------------
+    # 5. STOP OLD CONTAINERS
+    # ------------------------------
+    - name: Stop old containers
+      run: docker-compose down || true
+
+    # ------------------------------
+    # 6. BUILD & DEPLOY DOCKER IMAGES
+    # ------------------------------
+    - name: Build Containers
+      run: docker-compose build
+
+    - name: Start Containers
+      run: docker-compose up -d --remove-orphans
+
+    # ------------------------------
+    # 7. CLEANUP OLD IMAGES
+    # ------------------------------
+    - name: Cleanup
+      run: docker image prune -f
